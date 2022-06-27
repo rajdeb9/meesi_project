@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* header area start */
+.header-content {
+    background-color: #34495e;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+.header-content nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .logo-area {
+    display: flex;
+}
+.header-content .logo-area img {
+    width: 80px;
+    margin: 5px 0;
+}
+.header-content .logo-area h3 {
+	color: whitesmoke;
+	margin-top: 24px;
+	font-size: 26px;
+	font-weight: 600;
+	margin-left: 10px;
+	font-style: italic;
+    letter-spacing: 2px;
+}
+.header-content .logo-area span {
+    color:#00a8ff;
+}
+.menu-area ul {
+    display: flex;
+    list-style-type: none;
+}
+.menu-area ul li{
+    margin-left: 40px;
+}
+.menu-area ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    font-size: 15px;
+}
+.menu-area ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #0097e6;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.menu-area ul li a:hover{
+    color: #dcdde1;
+}
+.menu-area ul li a:hover:after{
+    width: 100%;
+}
+.menu-area i {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 14px;
+}
+/* background main content */
+.background-area {
+    background: linear-gradient(rgba(39, 60, 117,0.5),rgba(53, 59, 72,0.5)),url("images/Lionel-Messi-Background.jpg") no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    text-align: center;
+}
+.background-area h1 {
+	font-size: 71px;
+	padding-top: 195px;
+	font-weight: 500;
+}
+.background-area  span {
+    color:#1e90ff;
+}
+.background-area p {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 400;
+	word-spacing: 2px;
+	padding-top: 10px;
+	font-style: italic;
+}
+.background-area a {
+	display: inline-block;
+	text-decoration: none;
+	color: #1e90ff;
+	font-size: 19px;
+    font-weight: 500;
+	margin-top: 60px;
+	padding: 14px 21px;
+	border-radius: 8px;
+	background-color: transparent;
+	border: 2px solid #82ccdd;
+	width: 13%;
+    cursor:pointer;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.background-area a:hover {
+    background-color:#1e90ff;
+    box-shadow: 0 0 10px #1e90ff,0 0 20px #1e90ff,0 0 30px #1e90ff;
+    transition-delay: 0.2s;
+    color: black;
+}
+.background-area i {
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 15px;
+}
+/* card section start */
+.card-area h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 70px 0;
+    color: navy;
+    font-weight: 700;
+    position: relative;
+}
+.card-area h1:after {
+    content: "";
+    position: absolute;
+    background-color: #6c5ce7;
+    width: 0;
+    height: 3px;
+    left: 42%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.card-area h1:hover:after {
+    width: 16%;
+}
+
+
+.card-body {
+    width:340px;
+    height: 400px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+}
+.card-body img {
+	width: 203px;
+	position: absolute;
+	transform: translate(-33%,-38%);
+	border-radius: 6px;
+}
